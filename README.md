@@ -78,7 +78,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5173:5173"  # Mapea el puerto del contenedor al host
+      - "3000:3000"  # Mapea el puerto del contenedor al host
     volumes:
       - .:/app        # Monta el directorio del proyecto en el contenedor
       - /app/node_modules # Evita conflictos en node_modules al montarlo como un volumen anónimo
@@ -94,7 +94,7 @@ Con los archivos configurados, puedes iniciar el contenedor y verificar que la a
 docker-compose up
 ```
 
-Este comando inicia el contenedor y levanta el servidor de Vite en el puerto `5173`, permitiendo que accedas a la aplicación en [http://localhost:5173](http://localhost:5173).
+Este comando inicia el contenedor y levanta el servidor de Vite en el puerto `3000`, permitiendo que accedas a la aplicación en [http://localhost:3000](http://localhost:3000).
 
 ## 6. Verificación de Cambios en Tiempo Real
 
